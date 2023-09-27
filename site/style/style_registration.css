@@ -34,8 +34,16 @@ input{
     background-color: #6B799C;
     color: white;
     width: auto;
-    margin-right: 10px;
+    margin-top: 10px;
+}
+.btn:hover{
+    background-color: #5A83E8;
 }
 .form{
-    padding-top: 10px;
+}
+.user:hover{
+
+}
+.pas{
+
 }
