@@ -18,13 +18,14 @@ body{
     display: flex;
     flex-direction: column;
     width: 250px;
+    height: 250px;
     align-items: center;
     justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    
+    border: #6B799C 1px solid;
 }
 input{
     height: 20px;
