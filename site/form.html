@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style_form.css">
+</head>
+<body>
+    <div class="form">
+        <div class="radiobtn">
+            <div>Как удобно получить ответ:</div>
+            <label for="mail"> <input type="radio" name="choose" id="mail"> На почту</label><br>
+            <label for="pnone"> <input type="radio" name="choose" id="phone"> На телефон</label><br>
+            <label for="live"> <input type="radio" name="choose" id="live"> При личной встрече</label><br>
+        </div>
+        <div class="list">
+            <label for="theme"> Укажите тему вашего обращения</label><br>
+            <select name="theme" id="theme">
+                <option value="work">Работа</option>
+                <option value="coop">Сотрудничество</option>
+                <option value="person">Личное</option>
+            </select>
+        </div>
+        <div class="check">
+            <div>Какие языки знаете?</div>
+            <label for="chckbx1">
+                <input type="checkbox" name="chckbx1" id="chckbx1">Python
+            </label><br>
+            <label for="chckbx2">
+                <input type="checkbox" name="chckbx2" id="chckbx2">C#
+            </label><br>
+            <label for="chckbx3">
+                <input type="checkbox" name="chckbx3" id="chckbx3">C++
+            </label><br>
+        </div>
+        <div class="inp">
+            <div>
+                <label for="name">Ваше имя:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="email">Ваша почта:</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div>
+                <label for="tel">Ваш телефон:</label>
+                <input type="text" name="tel" id="tel">
+            </div>
+        </div>
+        <div class="quest">
+            <label for="question">
+                Ваш вопрос:
+            </label><br>
+            <input type="text" name="question" id="question">
+        </div>
+        <form action="" method="get" class="get">
+            <input type="submit" value="Отправить запрос">
+        </form>
+    </div>
+</body>
+</html>
