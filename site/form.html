@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style/style_form.css">
+    <script src="scripts/script.js"></script>
 </head>
 <body>
     <div class="form">
+    <form action="" method="get" class="get">
         <div class="radiobtn">
             <div>Как удобно получить ответ:</div>
             <label for="mail"> <input type="radio" name="choose" id="mail"> На почту</label><br>
@@ -54,9 +56,9 @@
             </label><br>
             <input type="text" name="question" id="question">
         </div>
-        <form action="" method="get" class="get">
             <input type="submit" value="Отправить запрос">
         </form>
+        <button onclick="check_form()"> Проверка</button>
     </div>
 </body>
 </html>
