@@ -11,6 +11,7 @@ body{
 .form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 20%;
     height: 50%;
     position: absolute;
@@ -35,4 +36,13 @@ body{
 }
 .inp div{
     justify-content: space-between;
+}
+.btn{
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+}
+.text{
+    display: flex;
+    margin-bottom: 10px;
 }
