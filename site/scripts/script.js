@@ -14,8 +14,13 @@ function check(){
     }
 
     console.log("Цель вашего обращения " + document.forms[0].theme[document.forms[0].theme.selectedIndex].text);
-    console.log("Ваш номер: " + document.forms[0].tel.value)
-    console.log("Ваша почта: " + document.forms[0].email.value)
-    console.log("Ваше обращение: " + document.forms[0].question.value)
+    console.log("Ваш номер: " + document.forms[0].tel.value);
+    console.log("Ваша почта: " + document.forms[0].email.value);
+    console.log("Ваше обращение: " + document.forms[0].question.value);
 
+}
+function size(size){
+        for(i = 1; i<7;i++){
+            document.images[i].style = `width: ${size}px; height: ${size}px`;
+        }    
 }
