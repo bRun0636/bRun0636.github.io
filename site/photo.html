@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link id="mylink" rel="stylesheet" href="/styles/light_theme.css" >
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div>
+                <h2 class="text">
+                    Главная страница
+                </h2>
+                <img src="images/dubna.png" alt="логотип" class="logo">
+            </div>
+            <nav>
+                <ul class="list">
+                <li><a href="index.html" class="color_ref">Главная</a></li>
+                <li><a href="summary.html" class="color_ref">Резюме</a></li>
+                <li><a href="competencion.html" class="color_ref">Компетенции</a></li>
+                <li><a href="photo.html" class="color_ref">Фото</a></li>
+                <li><a href="registration.html" class="color_ref"> Регистрция</a></li>
+                <li><a href="form.html" class="color_ref"> Форма</a></li>
+                </ul>
+            </nav>
+        </div>  
+            <label class="dark-version">
+                <input type="checkbox" onchange="toggle()" id="toggledark">
+                <span class="toggledark round"></span>
+            </label>
+    </header>
+    <main class="main">
+        <div class="btn">       
+            <button onclick="size(50)" class="style">
+                50px
+            </button>
+            <button onclick="size(100)" class="style">
+                100px
+            </button>
+            <button onclick="size(150)" class="style">
+                150px
+            </button>
+    </div>
+    <div class="wrapper">
+        <h1 class="text">
+            Фото
+    </h1>
+    <div class="photo">
+        <div>
+            <img src="images/1.webp" alt="Девушка блондинка" class="image_main" id="blond" name="img">
+            <h5 class="text">
+                Девушка блондинка
+            </h5>
+        </div>
+        <div>
+            <img src="images/2.jpg" alt="Девушка в черно-белом" class="image_main" name="img">
+            <h5 class="text">
+                Девушка в черно-белом
+            </h5>
+        </div>
+        <div>
+            <img src="images/3.jpg" alt="Киса" class="image_main" name="img">
+            <h5 class="text">
+                Киса
+            </h5>
+            </div>
+        <div>
+            <img src="images/4.jpg" alt="Девушка в платье" class="image_main" name="img">
+            <h5 class="text">    
+                Девушка в платье
+            </h5>
+        </div>
+        <div>
+            <img src="images/5.jpeg" alt="Черная пума" class="image_main" name="img">
+            <h5 class="text">
+                Черная пума
+            </h5>
+        </div>
+        <div>
+            <img src="images/6.jpg" alt="Девушка с шарфом" class="image_main" id="sharf">
+            <h5 class="text">
+                Девушка с шарфом
+            </h5>
+        </div>
+    </div>
+
+</div>
+    </main>
+    <footer class="footer">
+        <div class="wrapper wrapper-beettwen">
+            <h3 class="text">
+                <p>        
+                    Copyright © <time datetime="2023">2023</time>
+                    Muratov Eldar inc.
+                </p>
+                <address>University Dubna</address>
+            </h3>
+            <div>
+                <a href="https://t.me/bRun0636">
+                    <img src="images/telegram.png" alt="Я в телеграмм" class="image">
+                </a>
+                <a href="https://m.vk.com/brun0636">
+                    <img src="images/vk.png" alt="Я в вконтакте" class="image">
+                </a>
+                <a href="https://github.com/bRun0636">
+                    <img src="images/GitHub.png" alt="Я в гитхабе" class="image">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

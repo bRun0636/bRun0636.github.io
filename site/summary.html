@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link id="mylink" rel="stylesheet" href="/styles/light_theme.css" >
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <div>
+                <h2 class="text">
+                    Моё резюме
+                </h2>
+                <img src="images/dubna.png" alt="логотип" class="logo">
+            </div>
+            <nav>
+                <ul class="list">
+                <li><a href="index.html" class="color_ref">Главная</a></li>
+                <li><a href="summary.html" class="color_ref">Резюме</a></li>
+                <li><a href="competencion.html" class="color_ref">Компетенции</a></li>
+                <li><a href="photo.html" class="color_ref">Фото</a></li>
+                <li><a href="registration.html" class="color_ref"> Регистрция</a></li>
+                <li><a href="form.html" class="color_ref"> Форма</a></li>
+                </ul>
+            </nav>
+        </div>  
+            <label class="dark-version">
+                <input type="checkbox" onchange="toggle()" id="toggledark">
+                <span class="toggledark round"></span>
+            </label>
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <h1 class="text">
+                Резюме
+        </h1>
+        <table class="box">
+            <tr class="string">
+                <th class="text column">Год</th>
+                <th class="text column">Место работы</th>
+                <th class="text column">должность</th>
+            </tr>
+            <tr class="string">
+                <th class="text column">2025</th>
+                <th class="text column">ОИЯИ</th>
+                <th class="text column">Директор</th>
+            </tr>
+            <tr class="string">
+                <th class="text column">2026</th>
+                <th class="text column">Росиия</th>
+                <th class="text column">Президент</th>
+            </tr>
+        </table>
+    </main>
+    <footer class="footer">
+        <div class="wrapper wrapper-beettwen">
+            <h3 class="text">
+                <p>        
+                    Copyright © <time datetime="2023">2023</time>
+                    Muratov Eldar inc.
+                </p>
+                <address>University Dubna</address>
+            </h3>
+            <div>
+                <a href="https://t.me/bRun0636">
+                    <img src="images/telegram.png" alt="Я в телеграмм" class="image">
+                </a>
+                <a href="https://m.vk.com/brun0636">
+                    <img src="images/vk.png" alt="Я в вконтакте" class="image">
+                </a>
+                <a href="https://github.com/bRun0636">
+                    <img src="images/GitHub.png" alt="Я в гитхабе" class="image">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
