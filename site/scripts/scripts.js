@@ -1,10 +1,10 @@
 function toggle(){
     const checkbox = document.getElementById('toggle_dark');
     if(checkbox.checked == true){
-        document.getElementById('mylink').href = "/styles/dark_theme.css"
+        document.getElementById('mylink').href = "./styles/dark_theme.css"
     }
     else{
-        document.getElementById('mylink').href = "/styles/light_theme.css"
+        document.getElementById('mylink').href = "./styles/light_theme.css"
     }
 }
 function size(size){
