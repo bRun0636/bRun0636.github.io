@@ -258,12 +258,12 @@ h1, h2, h3, h4, h5, h6{
     left:50%;
     transform: translate(-50%);
 }
-.text{
+.text_form{
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
 }
-.text input{
+.text_form input{
     position: relative;
     width: 100%;
     border: solid black 2px;
