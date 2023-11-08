@@ -27,7 +27,7 @@
             </nav>
         </div>  
             <label class="dark-version">
-                <input type="checkbox" onchange="toggle()" id="toggledark">
+                <input type="checkbox" onchange="toggle()" id="toggle_dark">
                 <span class="toggledark round"></span>
             </label>
     </header>
@@ -37,9 +37,10 @@
                 Компетенции
             </h1>
         </div>
-        <div class="wrapper-main">
+        <div class="wrapper-main" id="main_block">
             <div class="box_comp">
                 <div>
+                    <h2>Заголовок</h2>
                     <small class="time">
                         9.00-10.30
                     </small>
@@ -53,6 +54,7 @@
             </div>
             <div class="box_comp">
                 <div>
+                    <h2>Заголовок</h2>
                     <small class="time">
                         9.00-10.30
                     </small>
@@ -66,6 +68,7 @@
             </div>
             <div class="box_comp">
                 <div>
+                    <h2>Заголовок</h2>
                     <small class="time">
                         9.00-10.30
                     </small>
@@ -79,6 +82,7 @@
             </div>
             <div class="box_comp">
                 <div>
+                    <h2>Заголовок</h2>
                     <small class="time">
                         9.00-10.30
                     </small>
@@ -92,32 +96,7 @@
             </div>
             <div class="box_comp">
                 <div>
-                    <small class="time">
-                        9.00-10.30
-                    </small>
-                    <h5 class="text">
-                        Тут будет текст
-                    </h5>
-                </div>
-                <div class="div-image">
-                    <img src="images/image-box.png" alt="" class="image-box">
-                </div>  
-            </div>
-            <div class="box_comp">
-                <div>
-                    <small class="time">
-                        9.00-10.30
-                    </small>
-                    <h5 class="text">
-                        Тут будет текст
-                    </h5>
-                </div>
-                <div class="div-image">
-                    <img src="images/image-box.png" alt="" class="image-box">
-                </div>  
-            </div>
-            <div class="box_comp">
-                <div>
+                    <h2>Заголовок</h2>
                     <small class="time">
                         9.00-10.30
                     </small>
@@ -131,6 +110,35 @@
             </div>
             <div class="box_comp">
                 <div>
+                    <h2>Заголовок</h2>
+                    <small class="time">
+                        9.00-10.30
+                    </small>
+                    <h5 class="text">
+                        Тут будет текст
+                    </h5>
+                </div>
+                <div class="div-image">
+                    <img src="images/image-box.png" alt="" class="image-box">
+                </div>  
+            </div>
+            <div class="box_comp">
+                <div>
+                    <h2>Заголовок</h2>
+                    <small class="time">
+                        9.00-10.30
+                    </small>
+                    <h5 class="text">
+                        Тут будет текст
+                    </h5>
+                </div>
+                <div class="div-image">
+                    <img src="images/image-box.png" alt="" class="image-box">
+                </div>  
+            </div>
+            <div class="box_comp">
+                <div>
+                    <h2>Заголовок</h2>
                     <small class="time">
                         9.00-10.30
                     </small>
@@ -143,7 +151,13 @@
                 </div>  
             </div>
         </div>
-        
+        <div class="add_form">
+            <input type="text" placeholder="Введите заголовок" name="" id="title">
+            <input type="text" placeholder="Введите время" name="" id="time">
+            <textarea name="" id="text" cols="10" rows="10"></textarea>
+            <input type="file" id="file">
+            <button onclick="add_form()">Добавить</button>
+        </div>
     </main>
     <footer class="footer">
         <div class="wrapper wrapper-beettwen">

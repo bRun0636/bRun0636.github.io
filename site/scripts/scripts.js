@@ -1,10 +1,10 @@
 function toggle(){
-    if(document.getElementById("mylink").href === 'http://127.0.0.1:5500/styles/dark_theme.css')
-    {
-        document.getElementById("mylink").href = './styles/light_theme.css'
+    const checkbox = document.getElementById('toggle_dark');
+    if(checkbox.checked == true){
+        document.getElementById('mylink').href = "/styles/dark_theme.css"
     }
     else{
-        document.getElementById("mylink").href = './styles/dark_theme.css'
+        document.getElementById('mylink').href = "/styles/light_theme.css"
     }
 }
 function size(size){
@@ -43,3 +43,37 @@ area.value = localStorage.getItem('area');
         area.oninput = () => {
         localStorage.setItem('area', area.value)
     };
+
+function add_form(){
+    let my_block = document.createElement('div');
+    my_block.className = 'box_comp';
+    my_block.id = "box";
+    document.getElementById("main_block").append(my_block);
+
+    let block_inf = document.createElement("div");
+    my_block.append(block_inf);
+
+    let inf_h2 = document.createElement("h2");
+    inf_h2.innerHTML = document.getElementById("title").value;
+    block_inf.append(inf_h2);
+
+    let time = document.createElement('small');
+    time.className = "time";
+    time.innerHTML = document.getElementById("time").value;
+    block_inf.append(time);
+
+    let inf_h5 = document.createElement("h5");
+    inf_h5.innerHTML = document.getElementById("text").value;
+    inf_h5.className = 'text';
+    block_inf.append(inf_h5);
+
+    let block_img = document.createElement("div");
+    block_img.className = "div-image";
+    my_block.append(block_img);
+
+    let selectImage = document.getElementById("file").files[0];
+    let img = document.createElement("img");
+    img.src = window.URL.createObjectURL(selectImage);
+    img.className = "image-box";
+    block_img.append(img);
+}
